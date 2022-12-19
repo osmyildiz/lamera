@@ -9,7 +9,7 @@
         <div class="swiper-container parallax-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="assets/img/slider-1.jpg" data-overlay-dark="7">
+                    <div class="bg-img valign" data-background="assets1/img/slider-1.jpg" data-overlay-dark="7">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 offset-lg-2 col-md-12">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-img valign" data-background="assets/img/slider-2.jpg" data-overlay-dark="7">
+                    <div class="bg-img valign" data-background="assets1/img/slider-2.jpg" data-overlay-dark="7">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 offset-lg-2 col-md-12">
@@ -68,7 +68,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-features-item">
                         <div class="features-icon">
-                            <img src="assets/img/icons/features-icon-1.svg" alt="svg icon">
+                            <img src="assets1/img/icons/features-icon-1.svg" alt="svg icon">
                         </div>
                         <h3>Premium Quality</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
@@ -77,7 +77,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-features-item">
                         <div class="features-icon">
-                            <img src="assets/img/icons/features-icon-2.svg" alt="svg icon">
+                            <img src="assets1/img/icons/features-icon-2.svg" alt="svg icon">
                         </div>
                         <h3>100% ECO Ingredients</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
@@ -86,7 +86,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-features-item">
                         <div class="features-icon">
-                            <img src="assets/img/icons/features-icon-3.svg" alt="svg icon">
+                            <img src="assets1/img/icons/features-icon-3.svg" alt="svg icon">
                         </div>
                         <h3>Wood Burned Grill</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
@@ -113,10 +113,10 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="about-img">
                         <div class="about-img-1">
-                            <img src="assets/img/about-1.jpg" alt="">
+                            <img src="assets1/img/about-1.jpg" alt="">
                         </div>
                         <div class="about-img-2">
-                            <img src="assets/img/about-2.jpg" alt="">
+                            <img src="assets1/img/about-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -518,7 +518,7 @@
                 <div class="col-lg-6 col-md-4">
                     <div class="video-box">
                         <a href="https://www.youtube.com/watch?v=xg7iNd0qkDM" class="video-btn popup-video">
-                            <img src="assets/img/play-button-light.svg" alt="play button icon">
+                            <img src="assets1/img/play-button-light.svg" alt="play button icon">
                         </a>
                         <h3>Best Place Of Brulee</h3>
                     </div>
@@ -566,9 +566,9 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="offer-img">
-                        <img src="assets/img/offer.png" alt="">
+                        <img src="assets1/img/offer.png" alt="">
                         <div class="discount-img">
-                            <img src="assets/img/discount.png" alt="">
+                            <img src="assets1/img/discount.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -591,38 +591,38 @@
             <div class="row">
                 <!-- gallery-single-item -->
                 <div class="col-lg-4 col-md-6">
-                    <a class="gallery-single-item popup-img" href="assets/img/gallery/gallery-1.jpg">
-                        <img src="assets/img/gallery/gallery-1.jpg" alt="image">
+                    <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-1.jpg">
+                        <img src="assets1/img/gallery/gallery-1.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
                 <div class="col-lg-4 col-md-6">
-                    <a class="gallery-single-item popup-img" href="assets/img/gallery/gallery-2.jpg">
-                        <img src="assets/img/gallery/gallery-2.jpg" alt="image">
+                    <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-2.jpg">
+                        <img src="assets1/img/gallery/gallery-2.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
                 <div class="col-lg-4 col-md-6">
-                    <a class="gallery-single-item popup-img" href="assets/img/gallery/gallery-3.jpg">
-                        <img src="assets/img/gallery/gallery-3.jpg" alt="image">
+                    <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-3.jpg">
+                        <img src="assets1/img/gallery/gallery-3.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
                 <div class="col-lg-4 col-md-6">
-                    <a class="gallery-single-item popup-img" href="assets/img/gallery/gallery-4.jpg">
-                        <img src="assets/img/gallery/gallery-4.jpg" alt="image">
+                    <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-4.jpg">
+                        <img src="assets1/img/gallery/gallery-4.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
                 <div class="col-lg-4 col-md-6">
-                    <a class="gallery-single-item popup-img" href="assets/img/gallery/gallery-5.jpg">
-                        <img src="assets/img/gallery/gallery-5.jpg" alt="image">
+                    <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-5.jpg">
+                        <img src="assets1/img/gallery/gallery-5.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
                 <div class="col-lg-4 col-md-6">
-                    <a class="gallery-single-item popup-img" href="assets/img/gallery/gallery-6.jpg">
-                        <img src="assets/img/gallery/gallery-6.jpg" alt="image">
+                    <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-6.jpg">
+                        <img src="assets1/img/gallery/gallery-6.jpg" alt="image">
                     </a>
                 </div>
             </div>
@@ -643,7 +643,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-team-box">
                         <div class="team-image">
-                            <img src="assets/img/team/team-1.jpg" alt="team" />
+                            <img src="assets1/img/team/team-1.jpg" alt="team" />
                             <div class="team-social-icon">
                                 <a href="#" class="social-color-1"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-color-2"><i class="fab fa-twitter"></i></a>
@@ -659,7 +659,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-team-box">
                         <div class="team-image">
-                            <img src="assets/img/team/team-2.jpg" alt="team" />
+                            <img src="assets1/img/team/team-2.jpg" alt="team" />
                             <div class="team-social-icon">
                                 <a href="#" class="social-color-1"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-color-2"><i class="fab fa-twitter"></i></a>
@@ -675,7 +675,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-team-box">
                         <div class="team-image">
-                            <img src="assets/img/team/team-3.jpg" alt="team" />
+                            <img src="assets1/img/team/team-3.jpg" alt="team" />
                             <div class="team-social-icon">
                                 <a href="#" class="social-color-1"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-color-2"><i class="fab fa-twitter"></i></a>
@@ -691,7 +691,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-team-box">
                         <div class="team-image">
-                            <img src="assets/img/team/team-4.jpg" alt="team" />
+                            <img src="assets1/img/team/team-4.jpg" alt="team" />
                             <div class="team-social-icon">
                                 <a href="#" class="social-color-1"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-color-2"><i class="fab fa-twitter"></i></a>
@@ -727,7 +727,7 @@
                                 <div class="testimonial-two-content">
                                     <div class="testimonial-text">
                                         <div class="logo-box">
-                                            <img src="assets/img/client/testimonial-logo-1.png" alt="logo">
+                                            <img src="assets1/img/client/testimonial-logo-1.png" alt="logo">
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
                                         <div class="rating-box">
@@ -742,7 +742,7 @@
                                     </div>
                                     <div class="author-info-box">
                                         <div class="author-img">
-                                            <img src="assets/img/client/testimonial-1.jpg" alt="testimonial">
+                                            <img src="assets1/img/client/testimonial-1.jpg" alt="testimonial">
                                         </div>
                                         <div class="author-bio-info">
                                             <h3>Stanley Tate</h3>
@@ -756,7 +756,7 @@
                                 <div class="testimonial-two-content">
                                     <div class="testimonial-text">
                                         <div class="logo-box">
-                                            <img src="assets/img/client/testimonial-logo-2.png" alt="logo">
+                                            <img src="assets1/img/client/testimonial-logo-2.png" alt="logo">
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
                                         <div class="rating-box">
@@ -771,7 +771,7 @@
                                     </div>
                                     <div class="author-info-box">
                                         <div class="author-img">
-                                            <img src="assets/img/client/testimonial-2.jpg" alt="testimonial">
+                                            <img src="assets1/img/client/testimonial-2.jpg" alt="testimonial">
                                         </div>
                                         <div class="author-bio-info">
                                             <h3>Lana Shelton</h3>
@@ -785,7 +785,7 @@
                                 <div class="testimonial-two-content">
                                     <div class="testimonial-text">
                                         <div class="logo-box">
-                                            <img src="assets/img/client/testimonial-logo-3.png" alt="logo">
+                                            <img src="assets1/img/client/testimonial-logo-3.png" alt="logo">
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
                                         <div class="rating-box">
@@ -800,7 +800,7 @@
                                     </div>
                                     <div class="author-info-box">
                                         <div class="author-img">
-                                            <img src="assets/img/client/testimonial-3.jpg" alt="testimonial">
+                                            <img src="assets1/img/client/testimonial-3.jpg" alt="testimonial">
                                         </div>
                                         <div class="author-bio-info">
                                             <h3>Mario Houston</h3>
@@ -903,7 +903,7 @@
                     <div class="blog-single-item">
                         <div class="blog-image">
                             <a href="single-blog.html">
-                                <img src="assets/img/blog/blog-1.jpg" alt="image">
+                                <img src="assets1/img/blog/blog-1.jpg" alt="image">
                             </a>
                         </div>
                         <div class="blog-description">
@@ -933,7 +933,7 @@
                     <div class="blog-single-item">
                         <div class="blog-image">
                             <a href="single-blog.html">
-                                <img src="assets/img/blog/blog-2.jpg" alt="image">
+                                <img src="assets1/img/blog/blog-2.jpg" alt="image">
                             </a>
                         </div>
                         <div class="blog-description">
@@ -963,7 +963,7 @@
                     <div class="blog-single-item">
                         <div class="blog-image">
                             <a href="single-blog.html">
-                                <img src="assets/img/blog/blog-3.jpg" alt="image">
+                                <img src="assets1/img/blog/blog-3.jpg" alt="image">
                             </a>
                         </div>
                         <div class="blog-description">
@@ -1003,42 +1003,42 @@
             <div id="partner-carousel" class="partner-carousel owl-carousel owl-theme owl-loaded">
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-1.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-1.jpg" alt="partner-image">
                     </a>
                 </div>
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-2.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-2.jpg" alt="partner-image">
                     </a>
                 </div>
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-3.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-3.jpg" alt="partner-image">
                     </a>
                 </div>
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-4.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-4.jpg" alt="partner-image">
                     </a>
                 </div>
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-5.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-5.jpg" alt="partner-image">
                     </a>
                 </div>
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-6.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-6.jpg" alt="partner-image">
                     </a>
                 </div>
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-7.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-7.jpg" alt="partner-image">
                     </a>
                 </div>
                 <div class="partner-slide-item">
                     <a href="#0">
-                        <img src="assets/img/partner-logo/client-8.jpg" alt="partner-image">
+                        <img src="assets1/img/partner-logo/client-8.jpg" alt="partner-image">
                     </a>
                 </div>
             </div>
@@ -1053,7 +1053,7 @@
                 <div class="col-lg-3 col-md-6 footer-box-item">
                     <div class="footer-about footer-list">
                         <a class="footer-logo" href="#">
-                            <img src="assets/img/logo.png" class="white-logo" alt="logo">
+                            <img src="assets1/img/logo.png" class="white-logo" alt="logo">
                         </a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua</p>
                         <ul class="footer-social-icon">
@@ -1101,31 +1101,6 @@
         </div>
     </section>
     <!-- End Footer Section -->
-
-    <!-- Start Footer Copyright Section -->
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <p>© 2022 - All Rights Reserved - Designed by <span class="author-name">Barakah Themes</span></p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <ul>
-                        <li> <a href="terms-condition.html">Terms & Conditions</a></li>
-                        <li> <a href="privacy-policy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Footer Copyright Section -->
-
-    <!-- Start Go Top Section -->
-    <div class="go-top">
-        <i class="fas fa-chevron-up"></i>
-        <i class="fas fa-chevron-up"></i>
-    </div>
-    <!-- End Go Top Section -->
 
 
 @endsection

@@ -43,8 +43,8 @@
                 <div class="brulee-responsive-menu">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/img/logo.png" class="white-logo" alt="logo">
-                            <img src="assets/img/logo-black.png" class="black-logo" alt="logo">
+                            <img src="assets1/img/logo.png" class="white-logo" alt="logo">
+                            <img src="assets1/img/logo-black.png" class="black-logo" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -54,8 +54,8 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="white-logo" alt="logo">
-                        <img src="assets/img/logo-black.png" class="black-logo" alt="logo">
+                        <img src="assets1/img/logo.png" class="white-logo" alt="logo">
+                        <img src="assets1/img/logo-black.png" class="black-logo" alt="logo">
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
