@@ -2607,10 +2607,10 @@ p:last-child {
 .reservation-section {
 	position: relative;
 	z-index: 1;
-	background-image: url(../img/banner-bg.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+    color: #FFFFFF;
 	text-align: center;
 	padding: 130px 0;
 }
@@ -2624,23 +2624,23 @@ p:last-child {
 	height: 100%;
 	width: 100%;
 	opacity: .8;
-	background-color: #070708;
+	background-color: #FFFFFF;
 }
 
 .reservation-section .section-title h2 {
-	color: #ffffff;
+	color: #000;
 }
 
 .nice-select:after {
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
     width: 7px;
     height: 7px;
     right: 15px;
     top: 50%;
 }
 .nice-select .current {
-    color: #fff;
+    color: #000;
     font-size: 14px;
     font-weight: 500;
 }
@@ -2655,12 +2655,12 @@ p:last-child {
 }
 
 .reservation-section .nice-select .list li.selected {
-  color: #b7b095;
+  color: #000;
 }
 
 .reservation-section .nice-select,
 .reservation-section .reservation-date {
-  border: 1px solid #fff;
+  border: 1px solid #000;
   background: transparent;
   height: 52px;
   line-height: 50px;
@@ -2671,28 +2671,28 @@ p:last-child {
 
 .reservation-section .reservation-date {
   width: 100%;
-  color: #fff;
+  color: #000;
   font-size: 14px;
   font-weight: 500;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   background: transparent;
   outline: none;
 }
 
 .reservation-section .reservation-date::-webkit-input-placeholder {
-  color: #fff;
+  color: #000;
 }
 
 .reservation-section .reservation-date:-ms-input-placeholder {
-  color: #fff;
+  color: #000;
 }
 
 .reservation-section .reservation-date::-ms-input-placeholder {
-  color: #fff;
+  color: #000;
 }
 
 .reservation-section .reservation-date::placeholder {
-  color: #fff;
+  color: #000;
 }
 
 .reservation-section .default-btn {
