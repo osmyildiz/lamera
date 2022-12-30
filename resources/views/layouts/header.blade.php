@@ -19,20 +19,20 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="call-to-action">
-                        <p><i class="fa fa-location-dot"></i> 770 East Linden Street New York</p>
-                        <p><i class="fa fa-mobile-screen-button"></i> <a href="tel:101202303">+707 355-633-755</a></p>
+                        <p><i class="fa fa-location-dot"></i> 25-27, MARSH HILL LONDON E9 5QA</p>
+                        <p><i class="fa fa-mobile-screen-button"></i> <a href="tel:02085100801">02085100801</a></p>
+                        <!--<p><i class="fa fa-envelope"></i> <a href="mailto:lamelabistro@gmail.com">lamelabistro@gmail.com</a></p>-->
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <ul class="top-social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://en-gb.facebook.com/LaMelaHackney/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/lamelahackney?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/lamelahackney/?hl=en"><i class="fab fa-instagram"></i></a></li>
                     </ul>
-                    <div class="opening-hours">
-                        <p><i class="fa fa-clock"></i> Opening Hours : 8:30am - 10:30pm</p>
-                    </div>
+                    <!--<div class="opening-hours">
+                        <p><i class="fa fa-clock"></i> Opening Hours : 9:00am - 7:00pm</p>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
                             </li>
                         </ul>
                         <div class="other-option">
-                            <a class="default-btn" href="#0">Book A Table <span></span></a>
+                            <a class="default-btn" href="#reservation">Book A Table <span></span></a>
                         </div>
                     </div>
                 </nav>

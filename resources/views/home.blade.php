@@ -14,9 +14,9 @@
                             <div class="row">
                                 <div class="col-lg-8 offset-lg-2 col-md-12">
                                     <div class="caption">
-                                        <h4 class="custom-font">Foodies Welcome Here</h4>
-                                        <h1>Fresh & Tasty Meals</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, magna aliqua. ipsum is simply dummy text of the printing.</p>
+                                        <h4 class="custom-font">Fresh & Tasty Meals</h4>
+                                        <h1>Welcome to La Mela Bistro</h1>
+                                        <p>La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.</p>
                                         <div class="banner-btn home-slider-btn">
                                             <a href="#0" class="default-btn-one">Check Our Menu <span></span></a>
                                             <a href="#0" class="default-btn">Book A Table <span></span></a>
@@ -33,8 +33,8 @@
                             <div class="row">
                                 <div class="col-lg-8 offset-lg-2 col-md-12">
                                     <div class="caption">
-                                        <h4 class="custom-font">Foodies Welcome Here</h4>
-                                        <h1>Savor The Flavors</h1>
+                                        <h4 class="custom-font">Savor The Flavors</h4>
+                                        <h1>Mediterranean Cuisine</h1>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, magna aliqua. ipsum is simply dummy text of the printing.</p>
                                         <div class="banner-btn home-slider-btn">
                                             <a href="#0" class="default-btn-one">Check Our Menu <span></span></a>
@@ -61,7 +61,7 @@
     </header>
     <!-- End Slider Area -->
     <!-- Start Reservation Section -->
-    <section class="reservation-section booking">
+    <section class="reservation-section booking" id="reservation">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -120,6 +120,26 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="form-group">
                             <input type="text" id="datepicker" class="reservation-date" placeholder="Booking Date">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="name" class="reservation-date" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                            <input type="email" id="email" class="reservation-date" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="phone" class="reservation-date" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="phone" class="reservation-date" placeholder="Message">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -526,52 +546,66 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="section-title">
                         <h6 class="sub-title">View Our Place</h6>
-                        <h2>Brulee Gallery</h2>
+                        <h2>LA MERA Gallery</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="container">
+                <div class="menu1-section col-md-12 justify-content-center">
+                    <div class="menu1-filter-box ">
+                        <ul class="nav" id="menu1-filter">
+                            <li class="filter filter-active" data-filter=".all">All Items</li>
+                            <li class="filter" data-filter=".food">Food</li>
+                            <li class="filter" data-filter=".place">Venue</li>
+
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            <div class="menu1-product-container">
+                <div class="row">
                 <!-- gallery-single-item -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 menu1-grid-item all food">
                     <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-1.jpg">
                         <img src="assets1/img/gallery/gallery-1.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 menu1-grid-item all place">
                     <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-2.jpg">
                         <img src="assets1/img/gallery/gallery-2.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 menu1-grid-item all place">
                     <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-3.jpg">
                         <img src="assets1/img/gallery/gallery-3.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 menu1-grid-item all place">
                     <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-4.jpg">
                         <img src="assets1/img/gallery/gallery-4.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 menu1-grid-item all place">
                     <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-5.jpg">
                         <img src="assets1/img/gallery/gallery-5.jpg" alt="image">
                     </a>
                 </div>
                 <!-- gallery-single-item -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 menu1-grid-item all food">
                     <a class="gallery-single-item popup-img" href="assets1/img/gallery/gallery-6.jpg">
                         <img src="assets1/img/gallery/gallery-6.jpg" alt="image">
                     </a>
                 </div>
             </div>
+            </div>
+
         </div>
     </section>
     <!-- End Gallery Section -->
-
     <!-- Start Testimonials Section -->
     <section class="testimonial-design-two section-padding">
         <div class="container">
@@ -589,7 +623,7 @@
                             <div class="single-testimonial-two">
                                 <div class="testimonial-two-content">
                                     <div class="testimonial-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
+                                        <p>A great spot! I’ve gone back multiple times to try different dishes. The veg full English is delicious - so are the pancakes and bagels! A great deal on pizzas as well. The staff is very accommodating and helpful. Quick service and affordable pricing.</p>
                                         <div class="rating-box">
                                             <ul>
                                                 <li><i class="fa fa-star"></i></li>
@@ -605,7 +639,7 @@
                                             <img src="assets1/img/client/testimonial-1.jpg" alt="testimonial">
                                         </div>
                                         <div class="author-bio-info">
-                                            <h3>Stanley Tate</h3>
+                                            <h3>Cristina Conde</h3>
                                             <span>Customer</span>
                                         </div>
                                     </div>
@@ -615,7 +649,8 @@
                             <div class="single-testimonial-two">
                                 <div class="testimonial-two-content">
                                     <div class="testimonial-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
+                                        <p>
+                                            So impressed it’s a jewel - you’d think by such a busy road it wouldn’t feel so good but it’s set back enough and with friendly staff plus a chef who clearly cares it’s a 5 star. Food tastes fresh and is well presented, with an interesting choice. Doggies welcomed with a water bowl too.                                        </p>
                                         <div class="rating-box">
                                             <ul>
                                                 <li><i class="fa fa-star"></i></li>
@@ -631,7 +666,7 @@
                                             <img src="assets1/img/client/testimonial-2.jpg" alt="testimonial">
                                         </div>
                                         <div class="author-bio-info">
-                                            <h3>Lana Shelton</h3>
+                                            <h3>Kate Dexter</h3>
                                             <span>Customer</span>
                                         </div>
                                     </div>
@@ -641,7 +676,8 @@
                             <div class="single-testimonial-two">
                                 <div class="testimonial-two-content">
                                     <div class="testimonial-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboredolore magna aliqua</p>
+                                        <p>
+                                            Outstanding place! I had the opportunity to have lunch there yesterday. It was fantastic! Great drinks, delicious meal, wonderful cup of fruit tea. I highly recommend it. The best of it was the first class service they provided. Well done! Will definitely go back.                                        </p>
                                         <div class="rating-box">
                                             <ul>
                                                 <li><i class="fa fa-star"></i></li>
@@ -657,7 +693,7 @@
                                             <img src="assets1/img/client/testimonial-3.jpg" alt="testimonial">
                                         </div>
                                         <div class="author-bio-info">
-                                            <h3>Mario Houston</h3>
+                                            <h3>Daniela Bruce</h3>
                                             <span>Customer</span>
                                         </div>
                                     </div>

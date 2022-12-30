@@ -8,12 +8,11 @@
                     <a class="footer-logo" href="#">
                         <img src="assets1/img/logo.png" class="white-logo" alt="logo">
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua</p>
+                    <p>La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.</p>
                     <ul class="footer-social-icon">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://en-gb.facebook.com/LaMelaHackney/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/lamelahackney?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/lamelahackney/?hl=en"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -22,9 +21,9 @@
                     <h5 class="title">Contact Info</h5>
                     <div class="footer-contact-info">
                         <ul class="footer-contact-list">
-                            <li><i class="fa fa-location-dot"></i> 770 East Linden Street New York</li>
-                            <li><i class="fa fa-mobile-screen-button"></i> <a href="tel:101202303">+707 355-633-755</a></li>
-                            <li><i class="fa fa-envelope"></i> <a href="mailto:random@example.com">contact-info@example.com</a></li>
+                            <li><i class="fa fa-location-dot"></i> 25-27, MARSH HILL LONDON E9 5QA</li>
+                            <li><i class="fa fa-mobile-screen-button"></i> <a href="tel:101202303">02085100801</a></li>
+                            <li><i class="fa fa-envelope"></i> <a href="mailto:lamelabistro@gmail.com">lamelabistro@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,9 +32,9 @@
                 <div class="footer-list">
                     <h5 class="title">Opening Time</h5>
                     <ul class="footer-opening-time-list">
-                        <li>Week days <span>09:00 – 22:00</span></li>
-                        <li>Saturday <span>08:00 – 08:00</span></li>
-                        <li>Sunday <span>Day Off</span></li>
+                        <li>Mon – Thu<span>9:00am – 7:00pm</span></li>
+                        <li>Fri - Sat<span>9:00am – 9:00pm</span></li>
+                        <li>Sunday <span>9:00am – 7:00pm</span></li>
                     </ul>
                 </div>
             </div>
@@ -59,7 +58,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
-                <p>© 2022 - All Rights Reserved - Designed by <span class="author-name">Barakah Themes</span></p>
+                <p>© 2022 - All Rights Reserved - Designed by <span class="author-name"><a href="mayfairdigital.co.uk">Mayfair Digital</a></span></p>
             </div>
             <div class="col-lg-6 col-md-6">
                 <ul>
