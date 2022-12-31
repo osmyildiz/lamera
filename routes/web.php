@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +16,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'homepage'])->name('homepage');
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
+Route::get('/menu', [App\Http\Controllers\HomeController::class, 'menu'])->name('menu');
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::get('/booking', [App\Http\Controllers\HomeController::class, 'booking'])->name('booking');
 
+
+
+Auth::routes();
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'root'])->name('root');
+//Route::get('/login', [App\Http\Controllers\AdminController::class, 'root'])->name('root');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/admin-main', [AdminController::class, 'main'])->name('admin_main');
+
+
+});

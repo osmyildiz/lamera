@@ -12,7 +12,7 @@ class ReservationSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('contacts')->insert(
+        DB::table('reservations')->insert(
             [
 
                 'res_date' => "2023-01-01",

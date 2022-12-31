@@ -18,7 +18,7 @@
                 <div class="row g-0">
 
                     <div class="col-xl-9">
-                        <img src="assets1/images/admin.jpg" alt="" width="100%"
+                        <img src="assets1/img/admin.jpg" alt="" width="100%"
                              class="space">
                     </div>
                     <!-- end col -->

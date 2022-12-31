@@ -18,8 +18,8 @@
 						];
 
 				var mapOptions = {
-					center: new google.maps.LatLng(40.7143528, -74.0059731),
-					zoom: 12,
+					center: new google.maps.LatLng(51.5496130, -0.0366004),
+					zoom: 13,
 					scrollwheel: false,
 					panControl: true,
 					mapTypeControl: false,
@@ -34,9 +34,9 @@
 					var contactdata = $('#contact-map').data('content');
 					var map = new google.maps.Map(document.getElementById("contact-map"), mapOptions);
 					var bounds = new google.maps.LatLngBounds();
-					var myIcon = new google.maps.MarkerImage("assets/img/map_pin.png", null, null, null, new google.maps.Size(50, 52));
+					var myIcon = new google.maps.MarkerImage("assets1/img/map_pin.png", null, null, null, new google.maps.Size(50, 52));
 					var marker = new google.maps.Marker({
-						position: new google.maps.LatLng(40.7143528, -74.0059731),
+						position: new google.maps.LatLng(51.5496130, -0.0366004),
 						map: map,
 						icon: myIcon
 					});

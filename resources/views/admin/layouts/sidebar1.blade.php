@@ -15,7 +15,6 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="/admin-slider" key="t-slider">Slider</a></li>
-                        <li><a href="/admin-hello" key="t-hello">Hello</a></li>
                         <li><a href="/admin-testimonial" key="t-testimonials">Testimonials</a></li>
 
                     </ul>
@@ -25,36 +24,15 @@
                 <li >
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bxs-user-detail"></i>
-                        <span key="t-crypto">ORI ARTIST MENTORING</span>
+                        <span key="t-crypto">About Us</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/admin-oriartistmentoring" key="t-whoweare">Page Content</a></li>
+                        <li><a href="/admin-aboutus" key="t-whoweare">Page Content</a></li>
                         <!--<li><a href="/admin-services" key="t-hello">Services</a></li>-->
                     </ul>
 
                 </li>
-                <li >
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="bx bx-paperclip"></i>
-                        <span key="t-crypto">BECOME AN ORI ARTIST</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/admin-joinuspage" key="t-whoweare">Page Content</a></li>
-                        <!--<li><a href="/admin-joinusforms" key="t-hello">Applicants</a></li>-->
-                    </ul>
 
-                </li>
-                <li >
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="bx bxs-archive"></i>
-                        <span key="t-crypto">Book Ori Artist</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/admin-bookoriartistpage" key="t-whoweare">Page Content</a></li>
-                        <!--<li><a href="/admin-bookartistforms" key="t-hello">Applicants</a></li>-->
-                    </ul>
-
-                </li>
                 <li >
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bxs-contact"></i>
@@ -62,48 +40,40 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="/admin-contact" key="t-whoweare">Page Content</a></li>
-                        <li><a href="/admin-contactforms" key="t-hello">Applicants</a></li>
                     </ul>
 
                 </li>
 
                 <li >
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <a href="/admin-reservations">
                         <i class="bx bxs-user"></i>
-                        <span key="t-crypto">Artists</span>
+                        <span key="t-crypto">Reservations</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/admin-artists" key="t-whoweare">All Artists</a></li>
-                        <li><a href="/artist-add-page" key="t-hello">Add New Artist</a></li>
-                    </ul>
 
                 </li>
 
                 <li >
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="bx bxs-archive"></i>
-                        <span key="t-crypto">What we offer Client</span>
+                        <i class="bx bxs-photo-album"></i>
+                        <span key="t-gallery">Gallery</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/whatweoffer-client" key="t-whoweare">Page Content</a></li>
-                        <li><a href="/packages-client" key="t-hello">Packages</a></li>
+                        <li><a href="/admin-gallery" key="t-gallery">All Photos</a></li>
+                        <li><a href="/gallery-add" key="t-galleryadd">Add New Photo</a></li>
                     </ul>
 
                 </li>
                 <li >
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="bx bxs-archive"></i>
-                        <span key="t-crypto">What we offer Artist</span>
+                        <i class="bx bx-food-menu"></i>
+                        <span key="t-crypto">Menu</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/whatweoffer-artist" key="t-whoweare">Page Content</a></li>
-                        <li><a href="/packages-artist" key="t-hello">Packages</a></li>
+                        <li><a href="/admin-menu" key="t-whoweare">All Menus</a></li>
+                        <li><a href="/menu-add" key="t-hello">Add New Menu</a></li>
                     </ul>
 
                 </li>
-
-
-
 
                 <li>
 

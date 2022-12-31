@@ -20,6 +20,7 @@ class CreateSlidersTable extends Migration
             $table->String('img');
             $table->String('content');
             $table->integer('is_active')->default(1);
+            $table->integer('priority');
             $table->timestamps();
         });
     }

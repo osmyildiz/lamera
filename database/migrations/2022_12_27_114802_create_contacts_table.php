@@ -32,6 +32,7 @@ class CreateContactsTable extends Migration
             $table->String('facebook');
             $table->String('twitter');
             $table->String('linkedin');
+            $table->String('description');
             $table->timestamps();
         });
     }

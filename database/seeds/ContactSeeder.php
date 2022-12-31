@@ -28,8 +28,10 @@ class ContactSeeder extends Seeder
             'email1'  =>" lamelabistro@gmail.com",
             'instagram' =>"https://www.instagram.com/lamelahackney/?hl=en",
             'linkedin' =>"",
+            'map_url' =>"",
             'facebook' =>"https://en-gb.facebook.com/LaMelaHackney/",
             'twitter' =>"https://twitter.com/lamelahackney?lang=en",
+            'description' =>"La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.",
             "created_at"=>date("Y-m-d"),
             "updated_at"=>date("Y-m-d"),
         ]);

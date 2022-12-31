@@ -28,3 +28,7 @@
 <script src="{{asset('assets1/js/wow.min.js')}}"></script>
 <!-- Main JS -->
 <script src="{{asset('assets1/js/main.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ_mGhah8EApmFiXYYBsdBuygviP2M2EE"></script>
+
+<script src="{{asset('assets1/js/gmap3.min.js')}}"></script>
+<script src="{{asset('assets1/js/map.js')}}"></script>

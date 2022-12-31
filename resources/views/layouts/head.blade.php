@@ -1,5 +1,6 @@
-
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets1/img/favico.png">
 <!-- Bootstrap Min CSS -->
 <link rel="stylesheet" href="{{asset('assets1/css/bootstrap.min.css')}}">
 <!-- Animate Min CSS -->

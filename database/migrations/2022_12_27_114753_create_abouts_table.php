@@ -19,6 +19,7 @@ class CreateAboutsTable extends Migration
             $table->String('title');
             $table->text('content');
             $table->String('img');
+            $table->String('img1');
             $table->String('slider_img');
             $table->String('box1_title');
             $table->String('box1_content');

@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <title> @yield('title') ORIARTISTS Admin Panel</title>
-    <link rel="icon" type="image/x-icon" href="assets1/images/ico.png"/>
+    <title> @yield('title') LAMERA Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="assets1/img/favico.png"/>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
