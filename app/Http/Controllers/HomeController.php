@@ -25,7 +25,7 @@ class HomeController extends Controller
 
     public function homepage()
     {
-        $sliders = Slider::where('is_active',1)
+        $sliders = slider::where('is_active',1)
             ->orderBy('priority','ASC')
             ->get();
         $menus=menu::selectRaw('categories.name as category_name,menus.*')
