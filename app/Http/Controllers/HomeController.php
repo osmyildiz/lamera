@@ -8,7 +8,7 @@ use App\Models\Category;
 use App\Models\contact;
 use App\Models\gallery;
 use App\Models\menu;
-use App\Models\Slider;
+use App\Models\slider;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
