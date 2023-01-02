@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\About;
-use App\Models\Category;
+use App\Models\about;
+use App\Models\category;
 use App\Models\contact;
 use App\Models\gallery;
 use App\Models\menu;
 use App\Models\slider;
-use App\Models\Testimonial;
+use App\Models\testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
