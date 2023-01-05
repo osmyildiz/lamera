@@ -22,6 +22,7 @@ Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])-
 Route::get('/booking', [App\Http\Controllers\HomeController::class, 'booking'])->name('booking');
 Route::post('/add_send_contact_form', [App\Http\Controllers\HomeController::class, 'add_send_contact_form'])->name('add_send_contact_form');
 Route::post('/add_subscriber', [App\Http\Controllers\HomeController::class, 'add_subscriber'])->name('add_subscriber');
+Route::post('/book_a_table_form', [App\Http\Controllers\HomeController::class, 'book_a_table_form'])->name('book_a_table_form');
 
 
 

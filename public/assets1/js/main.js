@@ -276,7 +276,11 @@
 	});
 
 	$(function () {
-		$("#datepicker").datepicker();
+		$("#datepicker").datepicker(
+            {
+                minDate: new Date()
+            }
+        );
 	});
 
 	$(document).ready(function() {

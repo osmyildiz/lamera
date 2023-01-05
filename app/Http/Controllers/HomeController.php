@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\about;
+use App\Models\booking;
 use App\Models\category;
 use App\Models\contact;
 use App\Models\Form;
@@ -299,6 +300,8 @@ class HomeController extends Controller
         $form->email = $request->email;
         $form->phone = $request->phone;
         $form->message = $request->message;
+        $form->created_at = date('Y-m-d H:i:s');
+        $form->updated_at = date('Y-m-d H:i:s');
         $save = $form->save();
 
         $data = [
@@ -321,6 +324,80 @@ class HomeController extends Controller
         if($save){
 
             return redirect()->back()->with(['message' => "Thank you,We've received your message. Someone from our team will contact you soon.", 'alert' => 'success']);
+
+        }
+        return redirect()->back()->with(['message' => 'An unexpected error has occurred. Please try again.!', 'alert' => 'danger']);
+
+    }
+    public function book_a_table_form(Request $request)
+    {
+
+        $validator = $request->validate([
+            'name' => 'required',                        // just a normal required validation
+            'email' => 'required|email',     // required and must be unique in the ducks table
+            'phone' => 'required',
+            'guest_number' => 'required',          // required and has to match the password field
+            'time' => 'required',          // required and has to match the password field
+            'res_date' => 'required',          // required and has to match the password field
+                     // required and has to match the password field
+
+        ],
+            [
+                'name.required' => 'Name is required.',                        // just a normal required validation
+                'email.required' => 'Email address is required.',     // required and must be unique in the ducks table
+                'guest_number.required' => 'Guest Number is required.',     // required and must be unique in the ducks table
+                'email.email' => 'Enter a valid email address.',     // required and must be unique in the ducks table
+                'phone.required' => 'Phone is required.',
+                'time.required' => 'Time is required.',          // required and has to match the password field
+                'res_date.required' => 'Date is required.',          // required and has to match the password field
+                       // required and has to match the password field
+            ]
+        );
+
+        if ($validator->fails()) {
+            return redirect(url()->previous() .'#reservation')
+                ->withErrors($validator)
+                ->withInput();
+        }
+        //$check_mail = Form::where('email', $request->email)->first();
+        //if ($check_mail) {
+        //    return redirect()->back()->with('danger', 'Email address already subscribed.');
+        //    //return back()->with('danger', 'Bu email ile daha önce kayıt olunmuş. Lütfen farklı bir email ile deneyiniz!');
+        //}
+        $form = new booking();
+        $form->name = $request->name;
+        $form->time = $request->time;
+        $form->guest_number = $request->guest_number;
+        $form->res_date = date('Y-m-d',strtotime($request->res_date));
+        $form->email = $request->email;
+        $form->phone = $request->phone;
+        $form->message = $request->message;
+        $form->created_at = date('Y-m-d H:i:s');
+        $form->updated_at = date('Y-m-d H:i:s');
+        $save = $form->save();
+
+        $data = [
+            'subject1' => 'Booking Information',
+            'email1' => $request->email,
+            'email' => "osmyildiz@gmail.com",
+            'name' => $request->name,
+            'time' => $request->subject,
+            'res_date' => $request->res_date,
+            'guest_number' => $request->guest_number,
+            'phone' => $request->phone,
+            'message1' => $request->message,
+        ];
+
+
+        Mail::send('emailbooking', $data, function ($message) use ($data) {
+            $message->to($data['email'])
+                ->subject($data['subject1']);
+        });
+
+
+        if($save){
+
+            return redirect()->back()->with(['message' => "Your restaurant reservation has been received and we look forward to welcoming you soon. ", 'alert' => 'success']);
 
         }
         return redirect()->back()->with(['message' => 'An unexpected error has occurred. Please try again.!', 'alert' => 'danger']);
@@ -351,6 +428,8 @@ class HomeController extends Controller
         //}
         $form = new Subscriber();
         $form->email = $request->footeremail;
+        $form->created_at = date('Y-m-d H:i:s');
+        $form->updated_at = date('Y-m-d H:i:s');
         $save = $form->save();
 
         $data = [
