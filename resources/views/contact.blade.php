@@ -1,5 +1,33 @@
 @extends('layouts.master')
+<style>
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 0.83;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+    }
 
+    .alert.success {background-color: #04AA6D;}
+    .alert.info {background-color: #2196F3;}
+    .alert.warning {background-color: #ff9800;}
+
+    .closebtn {
+        padding-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 20px;
+        line-height: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: black;
+    }
+</style>
 
 @section('content')
 
@@ -66,35 +94,70 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-8 col-md-12">
                     <div class="contact-form contact-form-1">
+                        @if(session()->has('message'))
+                            <div class="alert {{session('alert') ?? 'info'}} alert-dismissible fade show">
+                                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+
+                                @if(session('alert')=="success")
+                                {{session('message')}}
+                                @else
+                                    {{session('message')}}
+                                @endif
+                            </div>
+                        @endif
                         <p class="form-message"></p>
-                        <form id="contact-form" class="form" action="php-mails.php" method="POST">
+                        <form id="contact-form" class="form" action="/add_send_contact_form" method="POST" enctype="multipart/form-data">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">
+                                    <span class="error"style="color:red" role="alert">
+                                       <strong> {!! $errors->first('name', '<h6 class="help-block">:message</h6>') !!}</strong>
+                                    </span>
                                     <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" required placeholder="Your Name">
+                                        <input type="text" name="name" value="{{ old('name') }}"   id="name" class="form-control" placeholder="Your Name">
+
                                     </div>
+
+
                                 </div>
                                 <div class="col-lg-6 col-md-12">
+                                    <span class="error"style="color:red" role="alert">
+                                       <strong> {!! $errors->first('email', '<h6 class="help-block">:message</h6>') !!}</strong>
+                                    </span>
                                     <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control" required placeholder="Your Email">
+                                        <input type="email" name="email" value="{{ old('email') }}"  id="email" class="form-control"  placeholder="Your Email">
                                     </div>
+
                                 </div>
                                 <div class="col-lg-6 col-md-12">
+                                    <span class="error"style="color:red" role="alert">
+                                       <strong> {!! $errors->first('phone', '<h6 class="help-block">:message</h6>') !!}</strong>
+                                    </span>
                                     <div class="form-group">
-                                        <input type="text" name="phone" id="phone" required class="form-control" placeholder="Your Phone">
+                                        <input type="text" name="phone" id="phone" value="{{ old('phone') }}"   class="form-control" placeholder="Your Phone">
                                     </div>
+
                                 </div>
                                 <div class="col-lg-6 col-md-12">
+                                    <span class="error"style="color:red" role="alert">
+                                       <strong> {!! $errors->first('subject', '<h6 class="help-block">:message</h6>') !!}</strong>
+                                    </span>
                                     <div class="form-group">
-                                        <input type="text" name="subject" id="subject" class="form-control" required placeholder="Your Subject">
+                                        <input type="text" name="subject" id="subject" value="{{ old('subject') }}"   class="form-control"  placeholder="Your Subject">
                                     </div>
+
                                 </div>
                                 <div class="col-lg-12 col-md-12">
+                                    <span class="error"style="color:red" role="alert">
+                                       <strong> {!! $errors->first('message', '<h6 class="help-block">:message</h6>') !!}</strong>
+                                    </span>
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="6" required placeholder="Your Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message"    cols="30" rows="6"  placeholder="Your Message">{{ old('message') }}</textarea>
                                     </div>
+
                                 </div>
                                 <div class="col-lg-12 col-md-12">
                                     <button type="submit" class="default-btn">Send Message <span></span></button>
@@ -120,5 +183,14 @@
 
 @endsection
 
+@section('script')
 
+    <script>
+        $(document).ready(function(){
+            $('.alert-success').fadeIn().delay(3000).fadeOut('slow');
+            $('.alert-danger').fadeIn().delay(3000).fadeOut('slow');
+        });
+    </script>
+
+@endsection
 

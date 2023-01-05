@@ -27,6 +27,9 @@ class CreateAboutsTable extends Migration
             $table->String('box2_content');
             $table->String('box3_title');
             $table->String('box3_content');
+            $table->text('meta_keywords');
+            $table->text('meta_description');
+            $table->text('meta_title');
             $table->timestamps();
         });
     }

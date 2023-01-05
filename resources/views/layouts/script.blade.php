@@ -32,3 +32,5 @@
 
 <script src="{{asset('assets1/js/gmap3.min.js')}}"></script>
 <script src="{{asset('assets1/js/map.js')}}"></script>
+
+

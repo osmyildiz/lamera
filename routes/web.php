@@ -20,6 +20,8 @@ Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->nam
 Route::get('/menu', [App\Http\Controllers\HomeController::class, 'menu'])->name('menu');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('/booking', [App\Http\Controllers\HomeController::class, 'booking'])->name('booking');
+Route::post('/add_send_contact_form', [App\Http\Controllers\HomeController::class, 'add_send_contact_form'])->name('add_send_contact_form');
+Route::post('/add_subscriber', [App\Http\Controllers\HomeController::class, 'add_subscriber'])->name('add_subscriber');
 
 
 

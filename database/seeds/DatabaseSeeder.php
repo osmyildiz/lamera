@@ -23,6 +23,9 @@ class DatabaseSeeder extends Seeder
             ReservationSeeder::class,
             ContactSeeder::class,
             TestimonialSeeder::class,
+            FormSeeder::class,
+            SeoSeeder::class
+
 
 
         ]);

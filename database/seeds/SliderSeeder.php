@@ -16,7 +16,7 @@ class SliderSeeder extends Seeder
             [
 
                 'yellow_title' => "Fresh & Tasty Meals",
-                'title' => "Welcome to La Mela Bistro",
+                'title' => "Welcome to Lamela Bistro",
                 'img' => "assets1/img/slider-1.jpg",
                 'content' => "La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.",
                 "is_active" => 1,

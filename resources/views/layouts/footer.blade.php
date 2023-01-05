@@ -2,9 +2,38 @@
     use App\Models\contact;
     $contact = contact::find(1);
 @endphp
+<style>
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 0.83;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+    }
+
+    .alert.success {background-color: #04AA6D;}
+    .alert.info {background-color: #2196F3;}
+    .alert.warning {background-color: #ff9800;}
+
+    .closebtn {
+        padding-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 20px;
+        line-height: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: black;
+    }
+</style>
 <!-- Start Footer Section -->
 <section class="footer-area">
-    <div class="container">
+    <div class="container" id="footer">
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-box-item">
                 <div class="footer-about footer-list">
@@ -45,8 +74,23 @@
                 <div class="footer-list">
                     <h5 class="title">Subscribe Newsletter</h5>
                     <div class="footer-info-newsletter">
-                        <form class="newsletter-form">
-                            <input type="email" class="input-newsletter" placeholder="Enter your email" name="EMAIL" required="" autocomplete="off">
+                        @if(session()->has('message'))
+                            <div class="alert {{session('alert') ?? 'info'}} alert-dismissible fade show">
+                                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+
+                                @if(session('alert')=="success")
+                                    {{session('message')}}
+                                @else
+                                    {{session('message')}}
+                                @endif
+                            </div>
+                        @endif
+                        <form class="newsletter-form" action="/add_subscriber" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <span class="error"style="color:red" role="alert">
+                                       <strong> {!! $errors->first('footeremail', '<h6 class="help-block">:message</h6>') !!}</strong>
+                                    </span>
+                            <input type="email" class="input-newsletter" placeholder="Enter your email" name="footeremail" autocomplete="off">
                             <button class="default-btn" type="submit">Subscribe Now <span></span></button>
                         </form>
                     </div>
@@ -80,3 +124,4 @@
     <i class="fas fa-chevron-up"></i>
 </div>
 <!-- End Go Top Section -->
+
