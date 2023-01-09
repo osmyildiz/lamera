@@ -11,7 +11,7 @@ use App\Models\Form;
 use App\Models\Gallery;
 use App\Models\Menu;
 use App\Models\Seo;
-use App\Models\slider;
+use App\Models\Slider;
 use App\Models\Subscriber;
 use App\Models\Testimonial;
 use Artesaos\SEOTools\Facades\JsonLd;
