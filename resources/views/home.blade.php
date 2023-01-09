@@ -565,7 +565,7 @@
                             <div class="single-testimonial-two">
                                 <div class="testimonial-two-content">
                                     <div class="testimonial-text">
-                                        <p>{{$tst->content}}</p>
+                                        <p>{{$tst->comment}}</p>
                                         <div class="rating-box">
                                             <ul>
                                                 <li><i class="fa fa-star"></i></li>
