@@ -75,12 +75,12 @@ class HomeController extends Controller
         $menu_category=Category::orderBy('id','ASC')
             ->get();
         $place=Gallery::where('is_active',1)
-            ->where('category',2)
+            ->where('category_id',2)
             ->orderBy('priority','ASC')
             ->limit(6)
             ->get();
         $food=Gallery::where('is_active',1)
-            ->where('category',1)
+            ->where('category_id',1)
             ->orderBy('priority','ASC')
             ->limit(6)
             ->get();
