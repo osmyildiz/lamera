@@ -388,7 +388,6 @@ class AdminController extends Controller
 
             $kategori_all = Gallery_category::where('is_active',1)->orderBy('name','ASC')->get();
 
-
                 $photo_all = Gallery::
                     join('gallery_categories', 'gallery_categories.id', '=', 'galleries.category_id')
                     ->select('gallery_categories.name','galleries.*')

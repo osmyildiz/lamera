@@ -51,7 +51,7 @@
                 </li>
 
                 <li >
-                    <a href="/admin-photos/0">
+                    <a href="/admin-photos">
                         <i class="bx bx-photo-album"></i>
                         <span key="t-crypto">Gallery</span>
                     </a>

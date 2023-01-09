@@ -40,6 +40,63 @@ class SliderSeeder extends Seeder
                 "updated_at" => date("Y-m-d"),
             ]
         );
+        DB::table('sliders')->insert(
+            [
+
+                'yellow_title' => "Savor The Flavors",
+                'title' => "Mediterranean Cuisine",
+                'img' => "assets1/img/slider-2.jpg",
+                'page_name' => "booking",
+                'text' => "La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.",
+                "is_active" => 1,
+                "priority" => 2,
+                "created_at" => date("Y-m-d"),
+                "updated_at" => date("Y-m-d"),
+            ]
+        );
+        DB::table('sliders')->insert(
+            [
+
+                'yellow_title' => "Savor The Flavors",
+                'title' => "Mediterranean Cuisine",
+                'img' => "assets1/img/slider-2.jpg",
+                'page_name' => "menu",
+                'text' => "La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.",
+                "is_active" => 1,
+                "priority" => 2,
+                "created_at" => date("Y-m-d"),
+                "updated_at" => date("Y-m-d"),
+            ]
+        );
+        DB::table('sliders')->insert(
+            [
+
+                'yellow_title' => "Savor The Flavors",
+                'title' => "Mediterranean Cuisine",
+                'img' => "assets1/img/slider-2.jpg",
+                'page_name' => "about",
+                'text' => "La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.",
+                "is_active" => 1,
+                "priority" => 2,
+                "created_at" => date("Y-m-d"),
+                "updated_at" => date("Y-m-d"),
+            ]
+        );
+        DB::table('sliders')->insert(
+            [
+
+                'yellow_title' => "Savor The Flavors",
+                'title' => "Mediterranean Cuisine",
+                'img' => "assets1/img/slider-2.jpg",
+                'page_name' => "contact",
+                'text' => "La Mela (The Apple) of Homerton is a Bistro Coffee Restaurant in Hackney. We’re open seven days a week serving Breakfast, Lunch and Dinner.",
+                "is_active" => 1,
+                "priority" => 2,
+                "created_at" => date("Y-m-d"),
+                "updated_at" => date("Y-m-d"),
+            ]
+        );
+
 
 
     }

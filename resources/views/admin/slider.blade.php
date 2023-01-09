@@ -63,14 +63,6 @@
                             </div>
                         </div>
                         <div class="row mb-4">
-                            <label for="title" class="col-sm-3 col-form-label">Title</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="title"
-                                       name="title">
-
-                            </div>
-                        </div>
-                        <div class="row mb-4">
                             <label for="text" class="col-sm-3 col-form-label">Text</label>
                             <div class="col-sm-9">
                                 <textarea id="text" class="form-control" rows="3" name="text"></textarea>
