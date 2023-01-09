@@ -35,30 +35,45 @@
                     <div class="card-body">
 
                         <div class="row mb-4">
-                            <label for="url" class="col-sm-3 col-form-label">Image/Video</label>
+                            <label for="img" class="col-sm-3 col-form-label">Image</label>
                             <div class="col-sm-9">
+                                <div><span class="alert-info" role="alert"> Image size should be 1400x400</span></div>
 
                             <div class="input-group">
-                                <input type="file" class="form-control" id="url" name="url" >
+                                <input type="file" class="form-control" id="img" name="img" >
 
                             </div>
                             </div>
                         </div>
 
                         <div class="row mb-4">
-                            <label for="uptitle" class="col-sm-3 col-form-label">Up Title</label>
+                            <label for="yellow_title" class="col-sm-3 col-form-label">Yellow Title</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="uptitle"
-                                       name="uptitle">
+                                <input type="text" class="form-control" id="yellow_title"
+                                       name="yellow_title">
 
                             </div>
                         </div>
                         <div class="row mb-4">
-                            <label for="downtitle" class="col-sm-3 col-form-label">Down Title</label>
+                            <label for="title" class="col-sm-3 col-form-label">Title</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="downtitle"
-                                       name="downtitle">
+                                <input type="text" class="form-control" id="title"
+                                       name="title">
 
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="title" class="col-sm-3 col-form-label">Title</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="title"
+                                       name="title">
+
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="text" class="col-sm-3 col-form-label">Text</label>
+                            <div class="col-sm-9">
+                                <textarea id="text" class="form-control" rows="3" name="text"></textarea>
                             </div>
                         </div>
 
@@ -73,13 +88,6 @@
                             <label for="is_active" class="col-sm-3 col-form-label">Enable?</label>
                             <div class="col-sm-9">
                                 <input class="form-check-input" type="checkbox" id="is_active" name="is_active"  checked>
-
-                            </div>
-                        </div>
-                        <div class="row mb-4">
-                            <label for="is_active" class="col-sm-3 col-form-label">Video?</label>
-                            <div class="col-sm-9">
-                                <input class="form-check-input" type="checkbox" id="is_video" name="is_video">
 
                             </div>
                         </div>
@@ -119,10 +127,10 @@
                             <tr>
                                 <th>No</th>
                                 <th>img</th>
-                                <th>Up Title</th>
-                                <th>Down Title</th>
+                                <th>Yellow Title</th>
+                                <th>Title</th>
+                                <th>Text</th>
                                 <th>Enable?</th>
-                                <th>Video?</th>
                                 <th>Priority</th>
                                 <th>Edit/Delete</th>
                             </tr>
@@ -141,15 +149,15 @@
                                         <td>{{$key+1}}</td>
                                         <td><div class="media">
                                                 <div class="me-3">
-                                                    <img src="{{url($slider->url==NULL?"":$slider->url)}}" alt=""
+                                                    <img src="{{url($slider->img==NULL?"":$slider->img)}}" alt=""
                                                          style="display:block;" width="200px" height="200px">
                                                 </div>
                                             </div></td>
 
-                                        <td>{{$slider->uptitle}}</td>
-                                        <td>{{$slider->downtitle}}</td>
+                                        <td>{{$slider->yellow_title}}</td>
+                                        <td>{{$slider->title}}</td>
+                                        <td>{{$slider->text}}</td>
                                         <td>{{$slider->is_active}}</td>
-                                        <td>{{$slider->is_video}}</td>
                                         <td>{{$slider->priority}}</td>
 
                                         <td>
@@ -175,15 +183,15 @@
                                             <td>{{$key+1}}</td>
                                             <td><div class="media">
                                                     <div class="me-3">
-                                                        <iframe class="embed-responsive-item" src="{{url($slider->url==NULL?"":$slider->url)}}" controls="1" frameborder="1" allowfullscreen width="200px" height="200px"></iframe>
+                                                        <iframe class="embed-responsive-item" src="{{url($slider->img==NULL?"":$slider->img)}}" controls="1" frameborder="1" allowfullscreen width="200px" height="200px"></iframe>
 
                                                     </div>
                                                 </div></td>
 
-                                            <td>{{$slider->uptitle}}</td>
-                                            <td>{{$slider->downtitle}}</td>
+                                            <td>{{$slider->yellow_title}}</td>
+                                            <td>{{$slider->title}}</td>
+                                            <td>{{$slider->text}}</td>
                                             <td>{{$slider->is_active}}</td>
-                                            <td>{{$slider->is_video}}</td>
                                             <td>{{$slider->priority}}</td>
 
                                             <td>

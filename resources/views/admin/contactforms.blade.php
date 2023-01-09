@@ -22,7 +22,7 @@
 
     @component('admin.components.breadcrumb')
         @slot('li_1') Admin Panel @endslot
-        @slot('title') Contact Applicants @endslot
+        @slot('title') Contact Forms @endslot
     @endcomponent
     <div class="flash-message">
         @foreach (['danger', 'warning', 'success', 'info'] as $msg)
@@ -44,7 +44,7 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="card-title">All Applicants</h4>
+                        <h4 class="card-title">Contact Forms</h4>
 
                         <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-100" id="visitors" name="visitors">
                             <thead>
@@ -54,7 +54,6 @@
                                 <th class="align-middle">Phone</th>
                                 <th class="align-middle">Date</th>
                                 <th class="text-center">Email</th>
-                                <th class="text-center">City</th>
                                 <th class="text-center">Message</th>
                             </tr>
                             </thead>
@@ -67,12 +66,11 @@
 
                                 @foreach($records as $key=>$record)
                                     <tr>
-                                        <td>1</td>
+                                        <td>{{$key+1}}</td>
                                         <td>{{$record->name}}</td>
                                         <td>{{$record->phone}}</td>
                                         <td>{{$record->created_at}}</td>
                                         <td>{{$record->email}}</td>
-                                        <td>{{$record->city}}</td>
                                         <td>{{$record->message}}</td>
                                     </tr>
                                 @endforeach

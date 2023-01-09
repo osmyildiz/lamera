@@ -3,7 +3,7 @@
 
 @section('content')
     <!-- Start Page Title Area -->
-    <div class="page-title-area">
+    <div class="page-title-area" style="background-image:url({{url($slider->img)}})">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">

@@ -16,6 +16,8 @@ class CategorySeeder extends Seeder
 
             'name'   =>"Brunch",
             'slug'   =>"brunch",
+            'is_active'   =>1,
+            'priority'   =>1,
             "created_at"=>date("Y-m-d"),
             "updated_at"=>date("Y-m-d"),
         ]);
@@ -23,6 +25,8 @@ class CategorySeeder extends Seeder
 
             'name'   =>"Lunch",
             'slug'   =>"lunch",
+            'is_active'   =>1,
+            'priority'   =>2,
             "created_at"=>date("Y-m-d"),
             "updated_at"=>date("Y-m-d"),
         ]);
@@ -30,6 +34,8 @@ class CategorySeeder extends Seeder
 
             'name'   =>"Sandwiches",
             'slug'   =>"sandwiches",
+            'is_active'   =>1,
+            'priority'   =>3,
             "created_at"=>date("Y-m-d"),
             "updated_at"=>date("Y-m-d"),
         ]);
@@ -37,6 +43,8 @@ class CategorySeeder extends Seeder
 
             'name'   =>"Kids Menu",
             'slug'   =>"kids",
+            'is_active'   =>1,
+            'priority'   =>4,
             "created_at"=>date("Y-m-d"),
             "updated_at"=>date("Y-m-d"),
         ]);
@@ -44,6 +52,8 @@ class CategorySeeder extends Seeder
 
             'name'   =>"Pancakes",
             'slug'   =>"pancakes",
+            'is_active'   =>1,
+            'priority'   =>5,
             "created_at"=>date("Y-m-d"),
             "updated_at"=>date("Y-m-d"),
         ]);

@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title') SLİDER @endsection
+@section('title') SLIDER @endsection
 
 @section('css')
     <!-- DataTables -->
@@ -39,13 +39,10 @@
 
                                 <div class="row mb-4">
                                     <label for="img" class="col-sm-3 col-form-label"><div class="me-3">
-                                            @if($slider->is_video==0)
-                                            <img src="{{url($slider->url)}}" alt=""
-                                                 style="display:block;" width="100" height="70">
-                                            @else
-                                                <iframe class="embed-responsive-item" src="{{url($slider->url==NULL?"":$slider->url)}}" controls="1" frameborder="1" allowfullscreen width="100px" height="70px"></iframe>
 
-                                            @endif
+                                            <img src="{{url($slider->img)}}" alt=""
+                                                 style="display:block;" width="100" height="70">
+
                                         </div>
                                     </label>
 
@@ -59,18 +56,26 @@
                                 </div>
 
                                 <div class="row mb-4">
-                                    <label for="uptitle" class="col-sm-3 col-form-label">Up Title</label>
+                                    <label for="yellow_title" class="col-sm-3 col-form-label">Yellow Title</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="uptitle"
-                                               name="uptitle" value="{{$slider->uptitle}}">
+                                        <input type="text" class="form-control" id="yellow_title"
+                                               name="yellow_title" value="{{$slider->yellow_title}}">
 
                                     </div>
                                 </div>
                                 <div class="row mb-4">
-                                    <label for="downtitle" class="col-sm-3 col-form-label">Down Title</label>
+                                    <label for="title" class="col-sm-3 col-form-label">Title</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="downtitle"
-                                               name="downtitle" value="{{$slider->downtitle}}">
+                                        <input type="text" class="form-control" id="title"
+                                               name="title" value="{{$slider->title}}">
+
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="content" class="col-sm-3 col-form-label">Content</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="content"
+                                               name="content" value="{{$slider->text}}">
 
                                     </div>
                                 </div>
@@ -83,6 +88,14 @@
                                     </div>
                                 </div>
                                 <div class="row mb-4">
+                                    <label for="is_active" class="col-sm-3 col-form-label">Enable?</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-check-input" type="checkbox" id="is_active" name="is_active"  {{$slider->is_active ==1?"checked":""}}>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
                                     <div class="row justify-content-end">
                                         <div class="col-sm-9">
                                             <div>
@@ -91,20 +104,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row mb-4">
-                                    <label for="is_active" class="col-sm-3 col-form-label">Enable?</label>
-                                    <div class="col-sm-9">
-                                        <input class="form-check-input" type="checkbox" id="is_active" name="is_active"  {{$slider->is_active ==1?"checked":""}}>
 
-                                    </div>
-                                </div>
-                                <div class="row mb-4">
-                                    <label for="is_video" class="col-sm-3 col-form-label">Video?</label>
-                                    <div class="col-sm-9">
-                                        <input class="form-check-input" type="checkbox" id="is_video" name="is_video"  {{$slider->is_video ==1?"checked":""}}>
-
-                                    </div>
-                                </div>
 
 
                             </div>

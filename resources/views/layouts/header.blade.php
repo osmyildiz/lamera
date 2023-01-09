@@ -1,6 +1,6 @@
 @php
-    use App\Models\contact;
-    $contact = contact::find(1);
+    use App\Models\Contact;
+    $contact = Contact::find(1);
 @endphp
 <div class="preloader">
     <div class="d-table">

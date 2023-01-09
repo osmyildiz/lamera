@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title') Admin Panel @endsection
+@section('title') EDIT PHOTO ADMIN PANEL @endsection
 
 @section('css')
     <!-- DataTables -->
@@ -11,7 +11,7 @@
 
     @component('admin.components.breadcrumb')
         @slot('li_1') Admin Panel @endslot
-        @slot('title') Fotoğraf Güncelle @endslot
+        @slot('title') EDIT PHOTO @endslot
     @endcomponent
     <div class="flash-message">
         @foreach (['danger', 'warning', 'success', 'info'] as $msg)
@@ -25,58 +25,77 @@
             @endif
         @endforeach
     </div>
+    <div class="row">
+        <div class="col-xl-6">
+            <form method="POST" class="form-horizontal" action="/update-photo/{{$photo->id}}" enctype="multipart/form-data">
+                @csrf
+                <div class="card">
 
-    <div class="card">
-        <form method="POST" class="form-horizontal" action="/update-photo/{{$photo->id}}" enctype="multipart/form-data">
-            @csrf
-            <div class="card-body">
-                <h4 class="card-title mb-4">Fotoğraf Güncelle</h4>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="mb-4 row">
-                                    <label for="priority" class="col-md-3 col-form-label">Priority</label>
-                                    <div class="col-sm-9">
-                                        <input class="form-control" type="text" id="priority" name="priority" value="{{$photo->priority}}">
-                                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">EDIT PHOTO</h4>
+                        <div class="row">
+
+                            <div class="mb-4 row">
+                                <label for="time" class="col-md-3 col-form-label">CATEGORY</label>
+
+                                <div class="col-sm-4">
+                                    <select id="time" class="form-select" name="category">
+                                        @foreach($kategori_all as $kategorix)
+                                            <option value="{{$kategorix->id}}" {{$kategorix->id==$kategori->id?"selected":""}}>{{$kategorix->name}}</option>
+                                        @endforeach
+                                    </select>
+
                                 </div>
+                            </div>
 
-                                <div class="row mb-4">
-                                    <label for="avatar">Foto</label>
-                                    <div class="media">
-                                        <div class="me-3">
-                                            <img src="{{url($photo->url==NULL?"":$photo->url)}}" alt=""
-                                                 style="display:block;" width="50%" height="50%">
-                                        </div>
+
+
+                            <div class="mb-3">
+                                <label for="img1"></label>
+                                <div class="media">
+                                    <div class="me-3">
+                                        <img src="{{url($photo->url)}}" alt=""
+                                             style="display:block;" width="100" height="70">
                                     </div>
                                     <div class="input-group">
-                                        <input type="file" class="form-control" id="url" name="url" >
+                                        <input type="file" class="form-control" id="img1" name="img1">
 
                                     </div>
                                 </div>
-                                <div class="row mb-4">
-                                    <div class="row justify-content-end">
-                                        <div class="col-sm-9">
 
-
-                                            <div>
-                                                <button type="submit" class="btn btn-primary w-md">Güncelle</button>
-                                                <a href="{{route('admin_photo_gallery')}}"  class="btn btn-xs btn-warning text-white">Foto Galeri</i></a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
-                        </div>
-                    </div>
 
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="is_active" name="is_active"  {{$photo->is_active ==1?"checked":""}}>
+                                <label class="form-check-label" for="is_active">
+                                    Active/Inactive
+                                </label>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-4">
+
+
+                                    <div>
+                                        <button type="submit" class="btn btn-primary w-md">UPDATE</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
+            </form>
+
+        </div></div>
+
 
 
 

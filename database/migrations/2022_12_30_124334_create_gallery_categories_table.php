@@ -16,6 +16,8 @@ class CreateGalleryCategoriesTable extends Migration
         Schema::create('gallery_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->integer('is_active')->default(1);
+            $table->integer('priority')->default(1);
             $table->timestamps();
         });
     }

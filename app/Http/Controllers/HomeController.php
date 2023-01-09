@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\about;
-use App\Models\booking;
-use App\Models\category;
-use App\Models\contact;
+use App\Models\About;
+use App\Models\Booking;
+use App\Models\Category;
+use App\Models\Contact;
 use App\Models\Form;
-use App\Models\gallery;
-use App\Models\menu;
+use App\Models\Gallery;
+use App\Models\Menu;
 use App\Models\Seo;
 use App\Models\slider;
 use App\Models\Subscriber;
-use App\Models\testimonial;
+use App\Models\Testimonial;
 use Artesaos\SEOTools\Facades\JsonLd;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\SEOMeta;
@@ -34,56 +34,57 @@ class HomeController extends Controller
     public function homepage()
     {
         $sliders = slider::where('is_active',1)
+            ->where('page_name','home')
             ->orderBy('priority','ASC')
             ->get();
-        $menus=menu::selectRaw('categories.name as category_name,menus.*')
+        $menus=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_brunch=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_brunch=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',1)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_lunch=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_lunch=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',2)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_sand=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_sand=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',3)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_kids=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_kids=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',4)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_panc=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_panc=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',5)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_category=category::orderBy('id','ASC')
+        $menu_category=Category::orderBy('id','ASC')
             ->get();
-        $place=gallery::where('is_active',1)
+        $place=Gallery::where('is_active',1)
             ->where('category_id',2)
             ->orderBy('priority','ASC')
             ->limit(6)
             ->get();
-        $food=gallery::where('is_active',1)
+        $food=Gallery::where('is_active',1)
             ->where('category_id',1)
             ->orderBy('priority','ASC')
             ->limit(6)
             ->get();
-        $testimonials=testimonial::where('is_active',1)
+        $testimonials=Testimonial::where('is_active',1)
             ->orderBy('priority','ASC')
             ->get();
         $foods = $food->merge($place);
@@ -122,8 +123,11 @@ class HomeController extends Controller
     }
     public function about()
     {
+        $slider = slider::where('is_active',1)
+            ->where('page_name','about')
+            ->first();
         $about = About::find(1);
-        $testimonials=testimonial::where('is_active',1)
+        $testimonials=Testimonial::where('is_active',1)
             ->orderBy('priority','ASC')
             ->get();
         $seo = Seo::find(2);
@@ -151,49 +155,52 @@ class HomeController extends Controller
 
 
 
-        return view('about',compact('about','testimonials'));
+        return view('about',compact('about','testimonials','slider'));
 
 
     }
     public function menu()
     {
         $about = About::find(1);
-        $menus=menu::selectRaw('categories.name as category_name,menus.*')
+        $slider = slider::where('is_active',1)
+            ->where('page_name','menu')
+            ->first();
+        $menus=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_brunch=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_brunch=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',1)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_lunch=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_lunch=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',2)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_sand=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_sand=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',3)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_kids=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_kids=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',4)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_panc=menu::selectRaw('categories.name as category_name,menus.*')
+        $menu_panc=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category_id')
             ->where('is_active',1)
             ->where('category_id',5)
             ->orderBy('priority','ASC')
             ->get();
-        $menu_category=category::orderBy('id','ASC')
+        $menu_category=Category::orderBy('id','ASC')
             ->get();
         $seo = Seo::find(3);
         $keywords = explode(',', $seo->keywords);
@@ -220,14 +227,16 @@ class HomeController extends Controller
 
 
 
-        return view('menu',compact('about','menus','menu_brunch','menu_lunch','menu_sand','menu_kids','menu_panc','menu_category'));
+        return view('menu',compact('about','menus','slider','menu_brunch','menu_lunch','menu_sand','menu_kids','menu_panc','menu_category'));
 
 
     }
     public function contact()
     {
-        $contact = contact::find(1);
-
+        $contact = Contact::find(1);
+        $slider = slider::where('is_active',1)
+            ->where('page_name','contact')
+            ->first();
         $seo = Seo::find(4);
         $keywords = explode(',', $seo->keywords);
 
@@ -251,19 +260,22 @@ class HomeController extends Controller
         JsonLd::setDescription($seo->description);
         JsonLd::addImage('https://lamerabistro.com/'.$seo->logo_url);
 
-        return view('contact',compact('contact'));
+        return view('contact',compact('contact','slider'));
 
 
     }
     public function booking()
     {
+        $slider = slider::where('is_active',1)
+            ->where('page_name','booking')
+            ->first();
         $about = About::find(1);
-        $testimonials=testimonial::where('is_active',1)
+        $testimonials=Testimonial::where('is_active',1)
             ->orderBy('priority','ASC')
             ->get();
 
 
-        return view('booking',compact('about','testimonials'));
+        return view('booking',compact('slider','about','testimonials'));
 
 
     }
@@ -364,7 +376,7 @@ class HomeController extends Controller
         //    return redirect()->back()->with('danger', 'Email address already subscribed.');
         //    //return back()->with('danger', 'Bu email ile daha önce kayıt olunmuş. Lütfen farklı bir email ile deneyiniz!');
         //}
-        $form = new booking();
+        $form = new Booking();
         $form->name = $request->name;
         $form->time = $request->time;
         $form->guest_number = $request->guest_number;

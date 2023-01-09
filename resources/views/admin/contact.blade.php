@@ -86,14 +86,80 @@
                                     </div>
                                 </div>
                                 <div class="row mb-4">
-                                    <label for="youtube" class="col-sm-3 col-form-label">Youtube</label>
+                                    <label for="linkedin" class="col-sm-3 col-form-label">LinkedIn</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="youtube"
-                                               name="youtube" value="{{$record->youtube}}">
+                                        <input type="text" class="form-control" id="linkedin"
+                                               name="linkedin" value="{{$record->linkedin}}">
 
                                     </div>
                                 </div>
+                                <div class="row mb-4">
+                                    <label for="work_day1" class="col-sm-3 col-form-label">Work Day1:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="work_day1"
+                                               name="work_day1" value="{{$record->work_day1}}">
 
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="work_day1_hours" class="col-sm-3 col-form-label">Work Day1 Hours:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="work_day1_hours"
+                                               name="work_day1_hours" value="{{$record->work_day1_hours}}">
+
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="work_day2" class="col-sm-3 col-form-label">Work Day2:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="work_day2"
+                                               name="work_day2" value="{{$record->work_day2}}">
+
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="work_day2_hours" class="col-sm-3 col-form-label">Work Day2 Hours:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="work_day2_hours"
+                                               name="work_day2_hours" value="{{$record->work_day2_hours}}">
+
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="work_day3" class="col-sm-3 col-form-label">Work Day3:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="work_day3"
+                                               name="work_day3" value="{{$record->work_day3}}">
+
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="work_day3_hours" class="col-sm-3 col-form-label">Work Day3 Hours:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="work_day3_hours"
+                                               name="work_day3_hours" value="{{$record->work_day3_hours}}">
+
+                                    </div>
+                                </div>
+                                <div class="row mb-4" >
+                                    <label for="cover_img" class="col-sm-3 col-form-label">Contact Slider</label>
+
+                                    <div class="media">
+                                        <div class="me-3">
+                                            <img src="{{url($slider->img==NULL?"":$slider->img)}}" alt=""
+                                                 style="display:block;" width="50%" height="50%">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div><span class="alert-info" role="alert"> Image size should be 1400x400</span></div>
+
+                                        <div class="input-group">
+                                            <input type="file" class="form-control " id="img" name="img" >
+
+                                        </div>
+
+                                    </div>
+                                </div>
 
                                 <div class="row mb-4">
                                     <div class="row justify-content-end">
@@ -104,6 +170,7 @@
                                         </div>
                                     </div>
                                 </div>
+
 
 
 

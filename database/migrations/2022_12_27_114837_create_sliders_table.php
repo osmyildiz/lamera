@@ -18,7 +18,8 @@ class CreateSlidersTable extends Migration
             $table->String('yellow_title');
             $table->String('title');
             $table->String('img');
-            $table->String('content');
+            $table->String('text');
+            $table->String('page_name');
             $table->integer('is_active')->default(1);
             $table->integer('priority');
             $table->timestamps();

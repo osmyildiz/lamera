@@ -17,7 +17,7 @@ class CreateAboutsTable extends Migration
             $table->id();
             $table->String('yellow_title');
             $table->String('title');
-            $table->text('content');
+            $table->text('content1');
             $table->String('img');
             $table->String('img1');
             $table->String('slider_img');

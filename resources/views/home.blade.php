@@ -17,7 +17,7 @@
                                     <div class="caption">
                                         <h4 class="custom-font">{{$slider->yellow_title}}</h4>
                                         <h1>{{$slider->title}}</h1>
-                                        <p>{{$slider->content}}</p>
+                                        <p>{{$slider->text}}</p>
                                         <div class="banner-btn home-slider-btn">
                                             <a href="/menu" class="default-btn-one">Check Our Menu <span></span></a>
                                             <a href="/booking" class="default-btn">Book A Table <span></span></a>

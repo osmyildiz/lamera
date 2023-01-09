@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <title> @yield('title') LAMERA Admin Panel</title>
+    <title> @yield('title') LAMELA Admin Panel</title>
     <link rel="icon" type="image/x-icon" href="assets1/img/favico.png"/>
 
 

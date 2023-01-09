@@ -22,14 +22,10 @@
                 </li>
 
                 <li >
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="bx bxs-user-detail"></i>
+                    <a href="/admin-about">
+                        <i class="bx  bxs-user-detail"></i>
                         <span key="t-crypto">About Us</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/admin-aboutus" key="t-whoweare">Page Content</a></li>
-                        <!--<li><a href="/admin-services" key="t-hello">Services</a></li>-->
-                    </ul>
 
                 </li>
 
@@ -40,38 +36,32 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="/admin-contact" key="t-whoweare">Page Content</a></li>
+                        <li><a href="/admin-contactforms" key="t-whoweare">Contact Forms</a></li>
+                        <li><a href="/admin-subscribers" key="t-whoweare">Subscribers</a></li>
                     </ul>
 
                 </li>
 
                 <li >
-                    <a href="/admin-reservations">
+                    <a href="/admin-bookings">
                         <i class="bx bxs-user"></i>
-                        <span key="t-crypto">Reservations</span>
+                        <span key="t-crypto">Bookings</span>
                     </a>
 
                 </li>
 
                 <li >
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class="bx bxs-photo-album"></i>
-                        <span key="t-gallery">Gallery</span>
+                    <a href="/admin-photos/0">
+                        <i class="bx bx-photo-album"></i>
+                        <span key="t-crypto">Gallery</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/admin-gallery" key="t-gallery">All Photos</a></li>
-                        <li><a href="/gallery-add" key="t-galleryadd">Add New Photo</a></li>
-                    </ul>
 
                 </li>
                 <li >
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <a href="/admin-menu/0">
                         <i class="bx bx-food-menu"></i>
                         <span key="t-crypto">Menu</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/admin-menu" key="t-whoweare">All Menus</a></li>
-                        <li><a href="/menu-add" key="t-hello">Add New Menu</a></li>
-                    </ul>
 
                 </li>
 

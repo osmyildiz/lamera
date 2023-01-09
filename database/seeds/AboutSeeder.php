@@ -16,7 +16,7 @@ class AboutSeeder extends Seeder
 
             'yellow_title'   =>"Explore Our Story",
             'title'   =>"Nothing brings people together like good food",
-            'content'   =>"At La Mela we strive to make you feel at ease, providing service with a welcoming smile in a timeless setting. You’ll experience a continental coffee house vibe with a buzzy atmosphere that radiates warmth, comfort and relaxation.
+            'content1'   =>"At La Mela we strive to make you feel at ease, providing service with a welcoming smile in a timeless setting. You’ll experience a continental coffee house vibe with a buzzy atmosphere that radiates warmth, comfort and relaxation.
 
 Book your special event at La Mela and enjoy our excellent service and exquisite food.
 
