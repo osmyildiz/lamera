@@ -100,6 +100,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get ('/delete-foodtype/{id}', [AdminController::class, 'delete_foodtype'])->name('foodtype.delete');
     Route::post('/update-foodtype/{id}', [AdminController::class, 'update_foodtype'])->name('foodtype.update');
 
+    Route::get('/admin-seo', [AdminController::class, 'admin_seo'])->name('admin-seo');
+    Route::post('/update-seo/{id}', [AdminController::class, 'update_seo'])->name('seo.update');
+    Route::get ('/edit_seo/{id}', [AdminController::class, 'edit_seo'])->name('seo.edit');
 
 
 });

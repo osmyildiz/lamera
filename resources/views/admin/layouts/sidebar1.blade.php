@@ -64,6 +64,13 @@
                     </a>
 
                 </li>
+                <li >
+                    <a href="/admin-seo">
+                        <i class="bx bx-analyse"></i>
+                        <span key="t-crypto">Seo</span>
+                    </a>
+
+                </li>
 
                 <li>
 

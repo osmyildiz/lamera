@@ -11,6 +11,7 @@ use App\Models\Form;
 use App\Models\Gallery;
 use App\Models\Gallery_category;
 use App\Models\Menu;
+use App\Models\Seo;
 use App\Models\Slider;
 use App\Models\Subscriber;
 use App\Models\Testimonial;
@@ -447,7 +448,6 @@ class AdminController extends Controller
         return back()->with('danger', 'An unexpected error occured. Please try again.!!');
 
     }
-
     public function update_photo(Request $request,$id)
     {
 
@@ -735,4 +735,40 @@ class AdminController extends Controller
 
     }
 
+    public function admin_seo(Request $request)
+    {
+
+        $seos = Seo::get();
+
+        return view('admin.admin-seo',compact('seos'));
+
+    }
+    public function edit_seo(Request $request,$id)
+    {
+
+        $seo = Seo::find($id);
+        return view('admin.admin-seo-edit',compact('seo'));
+
+    }
+    public function update_seo(Request $request,$id)
+    {
+
+        $seo = Seo::find($id);
+
+        $seo->title = $request->title;
+        $seo->keywords = $request->keywords;
+        $seo->description = $request->description;
+
+
+        $save = $seo->save();
+
+        if($save){
+            return back()->with('success', 'The record has been updated');
+
+        }
+
+        return back()->with('danger', 'An unexpected error occured. Please try again.!!');
+
+
+    }
 }
