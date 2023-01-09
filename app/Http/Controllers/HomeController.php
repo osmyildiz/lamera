@@ -33,7 +33,7 @@ class HomeController extends Controller
 
     public function homepage()
     {
-        $sliders = slider::where('is_active',1)
+        $sliders = Slider::where('is_active',1)
             ->where('page_name','home')
             ->orderBy('priority','ASC')
             ->get();
@@ -123,7 +123,7 @@ class HomeController extends Controller
     }
     public function about()
     {
-        $slider = slider::where('is_active',1)
+        $slider = Slider::where('is_active',1)
             ->where('page_name','about')
             ->first();
         $about = About::find(1);
@@ -162,7 +162,7 @@ class HomeController extends Controller
     public function menu()
     {
         $about = About::find(1);
-        $slider = slider::where('is_active',1)
+        $slider = Slider::where('is_active',1)
             ->where('page_name','menu')
             ->first();
         $menus=Menu::selectRaw('categories.name as category_name,menus.*')
@@ -234,7 +234,7 @@ class HomeController extends Controller
     public function contact()
     {
         $contact = Contact::find(1);
-        $slider = slider::where('is_active',1)
+        $slider = Slider::where('is_active',1)
             ->where('page_name','contact')
             ->first();
         $seo = Seo::find(4);
@@ -266,7 +266,7 @@ class HomeController extends Controller
     }
     public function booking()
     {
-        $slider = slider::where('is_active',1)
+        $slider = Slider::where('is_active',1)
             ->where('page_name','booking')
             ->first();
         $about = About::find(1);
