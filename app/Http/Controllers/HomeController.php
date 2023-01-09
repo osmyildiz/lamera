@@ -167,8 +167,8 @@ class HomeController extends Controller
             ->first();
         $menus=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category')
-            ->where('is_active',1)
-            ->orderBy('priority','ASC')
+            ->where('menus.is_active',1)
+            ->orderBy('menus.priority','ASC')
             ->get();
         $menu_brunch=Menu::selectRaw('categories.name as category_name,menus.*')
             ->join('categories', 'categories.id', '=', 'menus.category')
